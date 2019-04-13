@@ -6,6 +6,7 @@ import './css/style.css';
 import App from './App';
 import Login from './Login';
 import Dashboard from './Dashboard';
+import Detail from './Detail';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
@@ -13,6 +14,7 @@ ReactDOM.render(
       <Route exact path="/" component={App} />
       <Route path="/login" component={Login} />
       <Route path="/dashboard" component={Dashboard} />
+      <Route path="/detail/:id" component={Detail} />
 </HashRouter>
 , document.getElementById('root'));
 
