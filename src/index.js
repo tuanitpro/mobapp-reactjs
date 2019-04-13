@@ -5,12 +5,14 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import './css/style.css';
 import App from './App';
 import Login from './Login';
+import Dashboard from './Dashboard';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <HashRouter>
       <Route exact path="/" component={App} />
       <Route path="/login" component={Login} />
+      <Route path="/dashboard" component={Dashboard} />
 </HashRouter>
 , document.getElementById('root'));
 
